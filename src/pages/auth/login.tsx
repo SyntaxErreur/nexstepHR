@@ -118,10 +118,18 @@ export default function LoginPage() {
               <Button variant="outline" size="sm" onClick={() => quickLogin('neha@techstart.io')}>Sponsor (Tech)</Button>
               <Button variant="outline" size="sm" onClick={() => quickLogin('arjun@acmecorp.com')}>Member (View Only)</Button>
             </div>
-            <div className="border-t pt-3">
+            <div className="border-t pt-3 space-y-2">
               <p className="text-xs text-muted-foreground text-center">
                 <span className="font-medium">Responders</span> do not log in here. They access assessments via unique invite links sent by Sponsors.
               </p>
+              <div className="text-center">
+                <Link
+                  to="/responder/demo-responder-token-001"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:underline"
+                >
+                  Try Demo Responder Assessment →
+                </Link>
+              </div>
             </div>
           </CardContent>
         </Card>

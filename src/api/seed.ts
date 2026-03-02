@@ -360,6 +360,14 @@ for (let i = 0; i < 12; i++) {
   }
 }
 
+// Demo invite with deterministic token for testing the responder flow
+seedInvites.push({
+  id: 'inv-demo-responder', capId: 'cap-2', emailOrPhone: 'demo-responder@example.com',
+  token: 'demo-responder-token-001',
+  status: 'sent',
+  sentAt: daysAgo(3), expiresAt: daysAgo(-30), roleHint: 'Senior Manager',
+});
+
 // Invites for cap-2 (collecting)
 for (let i = 0; i < 10; i++) {
   const token = generateToken();
