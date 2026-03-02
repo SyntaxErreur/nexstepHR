@@ -67,7 +67,7 @@ export default function CAPResponders() {
   };
 
   const handleCopyLink = (invite: ResponderInvite) => {
-    const link = `${window.location.origin}/respond/${invite.token}`;
+    const link = `${window.location.origin}/responder/${invite.token}`;
     navigator.clipboard.writeText(link).then(
       () => toast.success('Invite link copied to clipboard.'),
       () => toast.error('Failed to copy link.'),

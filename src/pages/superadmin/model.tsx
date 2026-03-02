@@ -108,7 +108,7 @@ export default function ModelPage() {
       key: 'key',
       header: 'Dimension Key',
       sortable: true,
-      render: (item: BaseModelWeights['weights'][number], _: any, index?: number) => (
+      render: (item: BaseModelWeights['weights'][number]) => (
         <code className="px-2 py-1 rounded bg-muted text-sm font-mono">{item.key}</code>
       ),
     },
